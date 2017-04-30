@@ -51,7 +51,14 @@ var createBoard = function() {
 		document.getElementById('game-board').appendChild(cardElement);
 	}
 };
+
 createBoard();
+
+function reStartGame() {
+	document.getElementById('game-board').innerHTML = "";
+	createBoard();
+};
+
 
 
 
